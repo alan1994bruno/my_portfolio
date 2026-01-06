@@ -1,0 +1,7 @@
+# Força todos os arquivos de texto a usarem LF na normalização do Git
+* text=auto eol=lf
+
+# Exceções (arquivos binários não devem ser tocados)
+*.png binary
+*.jpg binary
+*.ico binary
