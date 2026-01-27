@@ -14,6 +14,9 @@ const skillsLeft = [
   { name: "NestJs", value: 70 },
   { name: "Unity 3D", value: 60 },
   { name: "Python", value: 20 },
+  { name: "JavaFX", value: 60 },
+  { name: "styled-components", value: 80 },
+  { name: "Kotlin", value: 60 },
 ];
 
 const skillsRight = [
@@ -27,6 +30,9 @@ const skillsRight = [
   { name: "UNREAL ENGINE", value: 50 },
   { name: "C", value: 70 },
   { name: "C++", value: 70 },
+  { name: "Spring Boot", value: 60 },
+  { name: "Aplicativo .NET MAUI Blazor Hybrid", value: 60 },
+  { name: "Mobile Aplication Android Studio Kotlin", value: 60 },
 ];
 
 export function Skills() {
