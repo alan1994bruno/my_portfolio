@@ -22,15 +22,29 @@ const projects = [
     image: "/images/portfolio/albie.png",
     url: "https://allbie.internationalschool.global/pt-BR/sign-in/student?callbackUrl=%2F",
   },
+  {
+    id: 3,
+    category: "DESKTOP",
+    title: "JPGConvert",
+    image: "/images/portfolio/jpgconverter.png",
+    url: "https://github.com/alan1994bruno/JPGConvert",
+  },
+  {
+    id: 4,
+    category: "DESKTOP APP WEBSITE",
+    title: "Motel",
+    image: "/images/portfolio/motel.png",
+    url: "https://github.com/alan1994bruno/motel_example/tree/main",
+  },
 ];
 
-const categories = ["ALL", "APP", "WEBSITE"];
+const categories = ["ALL", "APP", "WEBSITE", "DESKTOP", "DESKTOP APP WEBSITE"];
 
 export function Portfolio() {
   const [filter, setFilter] = useState("ALL");
 
   const filteredProjects = projects.filter((project) =>
-    filter === "ALL" ? true : project.category === filter
+    filter === "ALL" ? true : project.category === filter,
   );
 
   return (
@@ -54,7 +68,7 @@ export function Portfolio() {
               "rounded-full px-5 py-2 text-sm font-semibold uppercase tracking-wider hover:bg-transparent hover:text-[#149ddd]",
               filter === cat
                 ? "text-[#149ddd] bg-white shadow-sm"
-                : "text-gray-700"
+                : "text-gray-700",
             )}
           >
             {cat}
